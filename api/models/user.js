@@ -14,15 +14,12 @@ const UserSchema = new Schema({
     },
     address: {
         type: String,
-        required: 'Address Required.'
     },
     mobile: {
         type: String,
-        required: 'Mobile Number Required.'
     },
     phone: {
         type: String,
-        required: 'Phone Number Required.'
     },
     email: {
         type: String,
@@ -30,7 +27,6 @@ const UserSchema = new Schema({
     },
     password: {
         type: String,
-        required: 'Password Required.'
     },
 
 });

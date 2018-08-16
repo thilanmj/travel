@@ -1,25 +1,14 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-const cors = require('cors');
+const express = require('express'),
     app = express(),
     port = process.env.PORT || 3000,
 
-
-    User = require('./models/user');
-
-
+    mongoose = require('mongoose'),
+    User = require('./models/user'),
+    bodyParser = require('body-parser');
 
 //mongoose connection
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/travel');
-
-
-app.use(express.static('public'));
-app.use(cors());
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
-app.use(basePath, todoListRoutes);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

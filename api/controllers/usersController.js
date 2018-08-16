@@ -41,12 +41,10 @@ exports.updateUser = function (req, res) {
 };
 
 
-exports.delete_a_task = function (req, res) {
-
-
+exports.deleteUser = function (req, res) {
     User.remove({
         _id: req.params.userId
-    }, function (err, task) {
+    }, function (err, user) {
         if (err)
             res.send(err);
         res.json({message: 'User successfully deleted'});
