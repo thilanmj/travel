@@ -62,3 +62,11 @@ typings/
 
 api/.idea/
 api/node_modules/
+web/.idea/
+web/dist/
+web/yarn.lock
+.idea/
+yarn.lock
+package-lock.json
+.DS_Store
+

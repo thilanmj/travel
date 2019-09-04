@@ -5,5 +5,5 @@ import {App} from "./components/App";
 
 ReactDOM.render(
     <App compiler="TypeScript" framework="React"/>,
-    document.getElementById("example")
+    document.getElementById("app-roots")
 );
